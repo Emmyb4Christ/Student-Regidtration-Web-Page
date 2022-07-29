@@ -38,11 +38,11 @@ body {
     outline: none;
 }
 
-.form input:hover {
+.form input:hover, #class:hover, .form button:hover, textarea:hover {
      border: 3px solid #e2dfdf;
 }
 
-.form input::placeholder {
+.form input::placeholder, textarea::placeholder {
     background-color: none;
     color: #c7c2c2;
 }
@@ -52,15 +52,48 @@ body {
     justify-content: space-between;
     gap: 20px;
     padding: 0 20px;
-    color: #fff;
+    color: #c7c2c2;
+    accent-color: #312f2f;
 }
 
-.radio-div input {
-    margin-left: none;
+input[type=radio] {
+    margin-left: -0.5rem;
 }
 
 .radio-div h3 {
     margin-right: 0px;
+}
+
+.form label {
+    color: #fff;
+    font-size: 22px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 5px;
+}
+
+#class, textarea {
+    appearance: none;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 22px;
+    font-family: Tahoma, sans-serif;
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+    background-color: #312f2f;
+    color: #c7c2c2;
+    outline: none;
+}
+
+textarea {
+    width: 93%;
+    resize: none;
+}
+
+#class option {
+    gap: 20px;
 }
 
 .form button {
@@ -76,12 +109,8 @@ body {
     font-family: Tahoma, sans-serif;
 }
 
-.form button:hover {
-    border: 3px solid #e2dfdf;
-  }
-
 .form #error {
-    color: red;
+    color: #f70202;
     font-size: 30px;
     text-align: center;
     margin-top: 10px;

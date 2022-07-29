@@ -3,8 +3,9 @@ let submit = document.getElementById("submit");
 let first = document.getElementById("first");
 let last = document.getElementById("last");
 let email = document.getElementById("email");
-let password = document.getElementById("pass1");
+let password = document.getElementById("pass");
 let confirmPassword = document.getElementById("pass2");
+let nameOfPreviousSchool = document.getElementById("previous");
 let errorText = document.getElementById("error");
 
 submit.addEventListener("click", function() {
@@ -13,6 +14,8 @@ submit.addEventListener("click", function() {
     emailVal = email.value.trim();
     passVal = pass.value.trim();
     pass2Val = pass2.value.trim();
+    previousVal = previous.value.trim();
+
 
     if (firstVal == "") {
         errorText.innerText = "First Name can't be Empty!";
@@ -30,7 +33,11 @@ submit.addEventListener("click", function() {
     }
     else if (pass2Val != passVal) {
         errorText.innerText = "Password must be the same!";
-    } else {
+    }
+    else if (previousVal == ""){
+        errorText.innerText = "Enter Your Previous School Name to Proceed!";
+        }
+    else {
         errorText.innerText = "Successfully Completed";
     }
 })
