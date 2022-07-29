@@ -1,0 +1,120 @@
+body {
+    background: rgb(1, 12, 49);
+    font-family: 'Segoe UI';
+}
+
+.form-name {
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 1px 1px #535151;
+}
+
+.form p {
+    color: #e1dfe9;
+    text-align: center;
+    font-style: italic;
+    margin-top: -1.0rem;
+    font-size: 20px;
+}
+
+.form {
+    width: 45%;
+    background: #535151;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.form input {
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 22px;
+    display: block;
+    margin: 20px 0;
+    width: 90%;
+    background-color: #312f2f;
+    color: #fff;
+    outline: none;
+}
+
+.form input:hover {
+     border: 3px solid #e2dfdf;
+}
+
+.form input::placeholder {
+    background-color: none;
+    color: #c7c2c2;
+}
+
+.radio-div {
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.radio-div input {
+    margin-left: none;
+}
+
+.radio-div h3 {
+    margin-right: 0px;
+}
+
+.form button {
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 22px;
+    width: 95%;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    font-family: Tahoma, sans-serif;
+}
+
+.form button:hover {
+    border: 3px solid #e2dfdf;
+  }
+
+.form #error {
+    color: red;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form .correct {
+    color: green;
+    font-size: 30px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .form-name {
+        font-size: 24px;
+    } 
+
+    .form p {
+        font-size: small;
+        margin-top: -0.5rem;
+    }
+
+    .form {
+        width: 80%;
+    }
+
+    .form input {
+        width: 78%;
+        padding: 30px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .form {
+        width: 80%;
+    }
+}

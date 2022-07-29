@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="form">
+        <h1 class="form-name">REGISTRATION FORM</h1>
+        <p>Fill in the following form</p>
+        <input type="text" placeholder="Enter First Name" id="first">
+        <input type="text" placeholder="Enter Last Name" id="last">
+        <input type="email" placeholder="Enter Email Address" id="email">
+        <input type="password" placeholder="Enter Password" id="pass">
+        <input type="password" placeholder="Enter Confirm Password" id="pass2">
+        <input type="date" id="date" placeholder="dd/mm/yyyy">
+        <div class="radio-div">
+            <h3>Male</h3>
+            <input name="gender" type="radio" id="gender">
+            <h3>Female</h3>
+            <input name="gender" type="radio" id="gender">
+        </div>
+        <button type="submit" id="submit"> Submit</button>
+        <p id="error"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
