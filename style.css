@@ -1,6 +1,40 @@
 body {
-    background: rgb(1, 12, 49);
+    background: whitesmoke;
     font-family: 'Segoe UI';
+}
+
+.nav-div {
+    width: 100%;
+    height: auto;
+    border: none;
+    background-color: #061401;
+    color: #fff;
+    display: inline-flex;
+    gap: 50px;
+    padding: 10px;
+}
+
+.nav-div div {
+    display: block;
+    text-align: center;
+}
+
+.nav-div img {
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.nav-div h1 {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-shadow: 5px 3px 3px black;
+}
+
+.nav-div span {
+    color: rgb(221, 215, 215);
 }
 
 .form-name {
